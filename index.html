@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linas Matkasse - Web3 Transparency</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gradient-to-br from-green-50 to-green-100 min-h-screen">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <span class="text-3xl">🌱</span>
+                    <span class="text-2xl font-bold text-green-700">Linas Matkasse</span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="index.html" class="text-green-700 font-semibold">Hem</a>
+                    <a href="products.html" class="text-gray-600 hover:text-green-700">Produkter</a>
+                    <a href="scanner.html" class="text-gray-600 hover:text-green-700">Scanna</a>
+                    <a href="wallet.html" class="text-gray-600 hover:text-green-700">Min Wallet</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="max-w-6xl mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-green-800 mb-4">
+                Från Jord till Bord
+            </h1>
+            <p class="text-xl text-gray-700 mb-8">
+                Spåra dina produkter på blockchain. Tjäna eco-tokens för hållbara val.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="scanner.html" 
+                   class="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+                    📷 Scanna Produkt
+                </a>
+                <a href="products.html" 
+                   class="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold border-2 border-green-600 hover:bg-green-50 transition">
+                    🛒 Se Produkter
+                </a>
+            </div>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid md:grid-cols-3 gap-8 mt-16">
+            
+            <!-- Feature 1: Transparency -->
+            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                <div class="text-4xl mb-4">🔍</div>
+                <h3 class="text-xl font-bold text-green-800 mb-2">
+                    Full Transparens
+                </h3>
+                <p class="text-gray-600">
+                    Scanna QR-koden och se produktens resa från bondgård till ditt kök. 
+                    Allt verifierbart på Polygon blockchain.
+                </p>
+            </div>
+
+            <!-- Feature 2: Eco Tokens -->
+            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                <div class="text-4xl mb-4">🪙</div>
+                <h3 class="text-xl font-bold text-green-800 mb-2">
+                    Eco-Tokens
+                </h3>
+                <p class="text-gray-600">
+                    Tjäna tokens för varje hållbart val. 1 token = 1 SEK rabatt. 
+                    Dina tokens, din wallet, din kontroll.
+                </p>
+            </div>
+
+            <!-- Feature 3: Verified Sustainability -->
+            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                <div class="text-4xl mb-4">✓</div>
+                <h3 class="text-xl font-bold text-green-800 mb-2">
+                    Verifierad Hållbarhet
+                </h3>
+                <p class="text-gray-600">
+                    KRAV-certifieringar, CO₂-fotavtryck och ursprung verifierat av 
+                    oberoende tredje part på blockchain.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Stats Section -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mt-16">
+            <h2 class="text-2xl font-bold text-center text-green-800 mb-8">
+                Vår Påverkan
+            </h2>
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-green-600" id="products-tracked">1,247</div>
+                    <div class="text-gray-600 mt-2">Produkter Spårade</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-green-600" id="tokens-earned">34,892</div>
+                    <div class="text-gray-600 mt-2">Tokens Utdelade</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-green-600" id="co2-saved">2,156</div>
+                    <div class="text-gray-600 mt-2">kg CO₂ Sparat</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-green-600" id="local-products">89%</div>
+                    <div class="text-gray-600 mt-2">Lokala Produkter</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works -->
+        <div class="mt-16">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">
+                Så Fungerar Det
+            </h2>
+            
+            <div class="grid md:grid-cols-4 gap-4">
+                <div class="text-center">
+                    <div class="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="font-semibold text-green-800 mb-2">Beställ</h3>
+                    <p class="text-gray-600 text-sm">Välj ekologiska och lokala produkter</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="font-semibold text-green-800 mb-2">Tjäna Tokens</h3>
+                    <p class="text-gray-600 text-sm">Få eco-tokens automatiskt i din wallet</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="font-semibold text-green-800 mb-2">Scanna QR</h3>
+                    <p class="text-gray-600 text-sm">Se produktens fullständiga resa</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
+                    <h3 class="font-semibold text-green-800 mb-2">Lös In</h3>
+                    <p class="text-gray-600 text-sm">Använd tokens för rabatter</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8 mt-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="mb-2">🌱 Linas Matkasse - Web3 Transparency Pilot</p>
+            <p class="text-green-200 text-sm">Powered by Polygon Blockchain</p>
+            <div class="mt-4 text-sm">
+                <a href="#" class="text-green-200 hover:text-white mx-2">Om Oss</a>
+                <a href="#" class="text-green-200 hover:text-white mx-2">Integritet</a>
+                <a href="#" class="text-green-200 hover:text-white mx-2">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple counter animation -->
+    <script>
+        // Animate numbers on page load
+        function animateValue(id, start, end, duration) {
+            const obj = document.getElementById(id);
+            const range = end - start;
+            const increment = end > start ? 1 : -1;
+            const stepTime = Math.abs(Math.floor(duration / range));
+            let current = start;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                obj.textContent = current.toLocaleString();
+                if (current === end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
+
+        // Run animations on load
+        window.addEventListener('load', () => {
+            animateValue("products-tracked", 0, 1247, 1000);
+            animateValue("tokens-earned", 0, 34892, 1500);
+            animateValue("co2-saved", 0, 2156, 1200);
+        });
+    </script>
+</body>
+</html>

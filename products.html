@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkter - Linas Matkasse</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.umd.min.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <span class="text-3xl">🌱</span>
+                    <span class="text-2xl font-bold text-green-700">Linas Matkasse</span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="index.html" class="text-gray-600 hover:text-green-700">Hem</a>
+                    <a href="products.html" class="text-green-700 font-semibold">Produkter</a>
+                    <a href="scanner.html" class="text-gray-600 hover:text-green-700">Scanna</a>
+                    <a href="wallet.html" class="text-gray-600 hover:text-green-700">Min Wallet</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        
+        <!-- Header -->
+        <div class="mb-8">
+            <h1 class="text-4xl font-bold text-green-800 mb-2">🛒 Våra Produkter</h1>
+            <p class="text-gray-600">Alla produkter är spårbara på blockchain med verifierade eco-certifieringar</p>
+        </div>
+
+        <!-- Filters -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <div class="flex flex-wrap gap-3">
+                <button onclick="filterProducts('all')" 
+                        class="filter-btn active px-4 py-2 rounded-lg bg-green-600 text-white hover:bg-green-700">
+                    Alla
+                </button>
+                <button onclick="filterProducts('eco')" 
+                        class="filter-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300">
+                    ✓ Ekologisk
+                </button>
+                <button onclick="filterProducts('local')" 
+                        class="filter-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300">
+                    📍 Lokal
+                </button>
+                <button onclick="filterProducts('low-carbon')" 
+                        class="filter-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300">
+                    🌱 Låg CO₂
+                </button>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div id="products-grid" class="grid md:grid-cols-3 gap-6">
+            <!-- Populated by JS -->
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/config.js"></script>
+    <script src="js/blockchain.js"></script>
+    <script src="js/products.js"></script>
+
+</body>
+</html>
