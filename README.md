@@ -71,3 +71,11 @@ const CONTRACTS = {
 - **Smart Contracts:** [GitHub Repo]
 - **Backend API:** [If applicable]
 - **Documentation:** [Docs URL]
+
+## 🔗 Smart Contracts
+
+**Contracts Repository:** https://github.com/MaxWK96/linas-matkasse-contracts  
+**Deployed Contracts (Polygon Amoy):**
+- ProductRegistry: `0x055d83CFE46E15349613566c8ddB065b4E1D57a5`
+- EcoLoyaltyToken: `0x083ba3725f579FFeB01297Cb9A33bBc5Be4d16ff`
+- RewardManager: `0x49E5DF81AE16Ec73b40dD9EA6C22e8513D327e50`
