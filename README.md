@@ -66,12 +66,6 @@ const CONTRACTS = {
 };
 ```
 
-## 🔗 Links
-
-- **Smart Contracts:** [GitHub Repo]
-- **Backend API:** [If applicable]
-- **Documentation:** [Docs URL]
-
 ## 🔗 Smart Contracts
 
 **Contracts Repository:** https://github.com/MaxWK96/linas-matkasse-contracts  
